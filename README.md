@@ -14,3 +14,7 @@ Azure App Configuration Demo. The scenarios where Azure App Configuration can be
 ## The main problem it solves
 
 - Centralized Configuration: Azure App Configuration provides a service to centrally manage application settings and feature flags. Modern applications, especially those built for the cloud, generally have many components that are distributed in nature. Spreading configuration settings across these components can lead to hard-to-troubleshoot errors during an application deployment. Use App Configuration to store all the settings for your application and secure their accesses in one place.
+
+## Links
+
+- [Azure App Configuration](https://docs.microsoft.com/en-us/azure/azure-app-configuration/)
