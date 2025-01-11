@@ -1,7 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 
 var builder = new ConfigurationBuilder()
-.AddInMemoryCollection(new Dictionary<string, string?>()
+  .AddAzureAppConfiguration(Environment.GetEnvironmentVariable("AZURE_APP_CONFIGURATION_CONNECTION_STRING"))
+  .AddInMemoryCollection(new Dictionary<string, string?>()
     {
     ["key1"] = "value1",
     ["key2"] = "value2"
@@ -9,4 +10,4 @@ var builder = new ConfigurationBuilder()
 
 IConfiguration configuration = builder.Build();
 
-Console.WriteLine(configuration["key1"]);
+Console.WriteLine(configuration["fruit"]);
