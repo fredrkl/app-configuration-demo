@@ -1,3 +1,8 @@
+# [v1.1.0](https://github.com/fredrkl/app-configuration-demo/compare/v1.0.0...v1.1.0) (2025-01-11)
+
+## ✨ New Features
+- [`bef363c`](https://github.com/fredrkl/app-configuration-demo/commit/bef363c)  Adding appsettings to config
+
 # v1.0.0 (2025-01-11)
 
 ## ✨ New Features
