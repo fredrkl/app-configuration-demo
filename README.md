@@ -29,6 +29,14 @@ The usual ones are:
 
 In this example we will use the `AddAzureAppConfiguration()` method to add the Azure App Configuration as a configuration source. Also with a KeyVault for the secrets.
 
+## Setup
+
+You will need the connection string in the following environment variable: `AZURE_APP_CONFIGURATION_CONNECTION_STRING`. Get it from the Azure portal.
+
+```
+> export AZURE_APP_CONFIGURATION_CONNECTION_STRING="Endpoint=https://d...lfkjsdfk"
+```
+
 ## Links
 
 - [Azure App Configuration](https://docs.microsoft.com/en-us/azure/azure-app-configuration/)
