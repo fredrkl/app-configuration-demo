@@ -8,9 +8,12 @@ var builder = new ConfigurationBuilder()
     {
     ["key1"] = "value1",
     ["key2"] = "value2"
-    });
+    })
+  .AddEnvironmentVariables();
 
 IConfiguration configuration = builder.Build();
 
 Console.WriteLine(configuration["fruit"]);
+Console.WriteLine(configuration["key1"]);
 Console.WriteLine(configuration["AppSettings:SettingKey"]);
+Console.WriteLine(configuration["ConnectionStrings:DefaultConnection:ConnectionString"]);
