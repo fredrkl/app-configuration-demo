@@ -37,6 +37,23 @@ You will need the connection string in the following environment variable: `AZUR
 > export AZURE_APP_CONFIGURATION_CONNECTION_STRING="Endpoint=https://d...lfkjsdfk"
 ```
 
+## Experiments
+
+I created a simple console application that reads the configuration from multiple sources in this order:
+
+- JSON file
+- Azure App Configuration
+- In-memory
+- Environment variables
+
+### Replace specific configuration 
+
+I want to demo replacing a specific value in a nested config using environment variables.
+
+### Add complex structure
+
+I want to replace the value of a key with a complex json structure using Azure App Configuration.
+
 ## Links
 
 - [Azure App Configuration](https://docs.microsoft.com/en-us/azure/azure-app-configuration/)
