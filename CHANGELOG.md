@@ -1,3 +1,8 @@
+# [v1.3.0](https://github.com/fredrkl/app-configuration-demo/compare/v1.2.0...v1.3.0) (2025-01-13)
+
+## ✨ New Features
+- [`d55bbc5`](https://github.com/fredrkl/app-configuration-demo/commit/d55bbc5)  Secret management
+
 # [v1.2.0](https://github.com/fredrkl/app-configuration-demo/compare/v1.1.0...v1.2.0) (2025-01-12)
 
 ## ✨ New Features
