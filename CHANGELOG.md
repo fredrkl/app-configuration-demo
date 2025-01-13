@@ -1,3 +1,8 @@
+# [v1.2.0](https://github.com/fredrkl/app-configuration-demo/compare/v1.1.0...v1.2.0) (2025-01-12)
+
+## ✨ New Features
+- [`8b841a2`](https://github.com/fredrkl/app-configuration-demo/commit/8b841a2)  Environment variables configuration
+
 # [v1.1.0](https://github.com/fredrkl/app-configuration-demo/compare/v1.0.0...v1.1.0) (2025-01-11)
 
 ## ✨ New Features
