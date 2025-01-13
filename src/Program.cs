@@ -15,5 +15,5 @@ IConfiguration configuration = builder.Build();
 
 Console.WriteLine(configuration["fruit"]);
 Console.WriteLine(configuration["key1"]);
-Console.WriteLine(configuration["AppSettings:SettingKey"]);
+Console.WriteLine(configuration["AppSettings:SettingKey:a"]);
 Console.WriteLine(configuration["ConnectionStrings:DefaultConnection:ConnectionString"]);
