@@ -23,4 +23,4 @@ Console.WriteLine(configuration["fruit"]);
 Console.WriteLine(configuration["key1"]);
 Console.WriteLine(configuration["AppSettings:SettingKey:a"]);
 Console.WriteLine(configuration["ConnectionStrings:DefaultConnection:ConnectionString"]);
-Console.WriteLine(configuration["asecret"]);
+Console.WriteLine(configuration["keyvaultsecret"]);
