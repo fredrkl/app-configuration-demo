@@ -24,3 +24,5 @@ Console.WriteLine(configuration["key1"]);
 Console.WriteLine(configuration["AppSettings:SettingKey:a"]);
 Console.WriteLine(configuration["ConnectionStrings:DefaultConnection:ConnectionString"]);
 Console.WriteLine(configuration["keyvaultsecret"]);
+Console.WriteLine(configuration["remove:DefaultConnection:ConnectionString"]);
+Console.WriteLine(configuration["logging:Providers:0:Name"]);
