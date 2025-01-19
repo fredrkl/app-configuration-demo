@@ -46,13 +46,54 @@ I created a simple console application that reads the configuration from multipl
 - In-memory
 - Environment variables
 
-### Replace specific configuration 
-
-I want to demo replacing a specific value in a nested config using environment variables.
-
 ### Add complex structure
 
-I want to replace the value of a key with a complex json structure using Azure App Configuration.
+The `logging` part of this configuration is complicated with array and nested configuration:
+
+```
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    },
+    "Providers": [
+      {
+        "Name": "Serilog",
+        "Using": [ "Serilog.Sinks.Console", "Serilog.Sinks.File" ],
+        "MinimumLevel": "Information",
+        "WriteTo": [
+          {
+            "Name": "Console"
+          },
+          {
+            "Name": "File",
+            "Args": {
+              "path": "Logs/log-.txt",
+              "rollingInterval": "Day"
+            }
+          }
+        ],
+        "Enrich": [ "FromLogContext", "WithMachineName", "WithThreadId" ],
+        "Properties": {
+          "Application": "SampleApp"
+        }
+      },
+      {
+        "Name": "Console",
+        "LogLevel": {
+          "Default": "Debug",
+          "System": "Information",
+          "Microsoft": "Information"
+        }
+      },
+    ]
+  }
+```
+
+This is a made up configuration that is only meant to show how to add a complex structure to the configuration.
+
+The _Azure APP Configuration_ does also have the entry: `Logging:Providers:0:Name` with a value from a keyvault in effect changing the _name_. This showcases adding keys to spesific configuration parts.
 
 ## Links
 
