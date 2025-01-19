@@ -95,6 +95,10 @@ This is a made up configuration that is only meant to show how to add a complex 
 
 The _Azure APP Configuration_ does also have the entry: `Logging:Providers:0:Name` with a value from a keyvault in effect changing the _name_. This showcases adding keys to spesific configuration parts.
 
+## Lessons learned
+
+- If you use configuration to get a complex object and try to write it out, then you will get nothing, e.g., `ConnectionStrings:DefaultConnection`. You will need to get a simple value, e.g., `ConnectionStrings:DefaultConnection:ConnectionString`.
+
 ## Links
 
 - [Azure App Configuration](https://docs.microsoft.com/en-us/azure/azure-app-configuration/)
