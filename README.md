@@ -98,6 +98,8 @@ The _Azure APP Configuration_ does also have the entry: `Logging:Providers:0:Nam
 ## Lessons learned
 
 - If you use configuration to get a complex object and try to write it out, then you will get nothing, e.g., `ConnectionStrings:DefaultConnection`. You will need to get a simple value, e.g., `ConnectionStrings:DefaultConnection:ConnectionString`.
+- The key in the Azure App Configuration can be a path, e.g., `Logging:Providers:0:Name` and is what is being used in the `ConfigurationBuilder` to get the value
+- You will need to either give the _Azure App Configuration_ a dedicated managed identity or use a system assigned. Then give that identity access to the _KeyVault_. One example is to give it the `Key Vault Secrets User` to be able to read secrets.
 
 ## Links
 
