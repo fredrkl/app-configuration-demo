@@ -1,3 +1,8 @@
+# [v1.3.1](https://github.com/fredrkl/app-configuration-demo/compare/v1.3.0...v1.3.1) (2025-03-31)
+
+## 🐛 Bug Fixes
+- [`11c73b3`](https://github.com/fredrkl/app-configuration-demo/commit/11c73b3)  Doble setting
+
 # [v1.3.0](https://github.com/fredrkl/app-configuration-demo/compare/v1.2.0...v1.3.0) (2025-01-13)
 
 ## ✨ New Features
