@@ -1,3 +1,8 @@
+# [v1.4.0](https://github.com/fredrkl/app-configuration-demo/compare/v1.3.1...v1.4.0) (2025-04-01)
+
+## ✨ New Features
+- [`3eb2b91`](https://github.com/fredrkl/app-configuration-demo/commit/3eb2b91)  Using Client Secret Credential
+
 # [v1.3.1](https://github.com/fredrkl/app-configuration-demo/compare/v1.3.0...v1.3.1) (2025-03-31)
 
 ## 🐛 Bug Fixes
