@@ -37,6 +37,18 @@ You will need the connection string in the following environment variable: `AZUR
 > export AZURE_APP_CONFIGURATION_CONNECTION_STRING="Endpoint=https://d...lfkjsdfk"
 ```
 
+Additionaly, you will need to set the following environment variable for the enterprise application that access the KeyVaylt.
+
+- AZURE_TENANT_ID
+- AZURE_CLIENT_ID
+- AZURE_CLIENT_SECRET
+
+The _service principle_ needs the following KeyVault role:
+
+- Key Vault Secrets User
+
+It is tempting to think that the _managed identity_ that you assign as the _Azure App Configuration_ identity is automatically used for KeyVault access. However, you will need to spesify an _Enterprise Application_ that has KeyVault access or use the `DefaultAzureCredential`.
+
 ## Experiments
 
 I created a simple console application that reads the configuration from multiple sources in this order:
